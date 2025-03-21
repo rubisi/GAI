@@ -1,0 +1,21 @@
+dataset: CORA  # Name of the graph dataset
+
+anomalies:
+  nodes:
+    - method: add  # Add new anomalous nodes
+      num_nodes: 10  # Number of new nodes to add
+
+    - method: modify  # Modify existing nodes
+      num_nodes: 15  # Number of nodes to modify
+
+
+  edges:
+    - method: add  # Add new edges
+      num_edges: 20  # Number of new edges to add
+
+    - method: delete  # Delete edges
+      num_edges: 10  # Number of edges to del
+
+metadata:
+  file_format: "csv"  # Options: "csv", "json"
+  location: "./metadata/"  # folder to save metadata
